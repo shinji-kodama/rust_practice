@@ -1,0 +1,11 @@
+
+services:
+  rust-app:
+    build: ./app
+    tty: true
+    volumes:
+      - ./app:/app
+      - ./.aws:/root/.aws
+    working_dir: /app
+    ports:
+      - "9000:9000"
