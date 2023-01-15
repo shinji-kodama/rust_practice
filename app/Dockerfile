@@ -7,5 +7,5 @@ RUN apt update && \
     # cargo install diesel_cli --no-default-features --features sqlite-bundled && \
     # cargo install trunk && \
     cargo install cargo-make && \
-    rustup target add aarch64-unknown-linux-gnu && \
-    rustup target add wasm32-unknown-unknown
+    rustup target add aarch64-unknown-linux-gnu
+    # rustup target add wasm32-unknown-unknown
